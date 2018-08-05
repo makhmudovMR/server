@@ -5,7 +5,7 @@ serv_sock.bind(('127.0.0.1', 53210))
 serv_sock.listen(10)
 
 while True:
-    #Бесконечно обрабатываем выздящие подключения
+    #Бесконечно обрабатываем входящие подключения
 
     client_sock, client_addr = serv_sock.accept()
     print('Connected by:', client_addr)
